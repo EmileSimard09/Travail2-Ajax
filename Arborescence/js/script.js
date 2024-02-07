@@ -30,7 +30,6 @@ function GetDisplayXML(code){
 
 function DisplayXMLResponse(xml,code){
   var peinture = xml.getElementsByTagName("peinture");
-  console.log(peinture);
 
   for(i=0;i< peinture.length;i++){
     if(peinture[i].getElementsByTagName("code")[0].firstChild.nodeValue == code){
@@ -89,7 +88,6 @@ function GetDisplayJson(code){
 function DisplayJSONResponse(json,code) {
 
 	var peinture = json.peinture;
-  console.log(peinture);
 	
 	for (i = 0; i < peinture.length; i++) {
     if(peinture[i].code == code){
